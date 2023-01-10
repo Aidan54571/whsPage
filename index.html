@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #042350;
+  text-align: center;
+  margin:none;
+  padding-top:50px;
+  font-size: 25px;
+  color:#F65C02;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'nav nav nav nav nav nav'
+    'header header header header header header' 
+    'left middle middle middle middle middle' 
+     'pic pic pic pic pic pic'
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  
+  
+}
+
+/* Style the left column */
+.left {
+  overflow:wrap;
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the nav */
+.nav {
+  grid-area: nav;
+}
+
+/* Style the nav */
+.pic {
+  grid-area: pic;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #F65C02;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+     'nav nav nav nav nav nav'
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'pic pic pic pic pic pic'
+      'footer footer footer footer footer footer';
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F65C02;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #01256F;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+text-decoration:underline;
+}
+
+ol {
+  list-style-type:disc;
+  
+ 
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+<div class="nav">
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  </div>
+  <div class="header">
+    <img src="Images/wlogo.png"width=150>
+    <h1>Walpole High School<br></h1> <h3>Social Studies Department</h3>
+  </div>
+  
+  <div class="left" style="background-color:#fff;">
+    <ol>
+      <li> <a href="https://sites.google.com/walpole.k12.ma.us/whssocialstudies/useful-links">Useful Links</a></li>
+      <br>
+        <li><a href="https://sites.google.com/walpole.k12.ma.us/whssocialstudies/research-writing">Research & Writing</a></li>
+        <br>
+        <li><a href="https://docs.google.com/spreadsheets/d/1Y4435EzM2PJkcTUM31rbP6o9a2okN37J2c7KSMr7KOE/edit?pli=1#gid=125534541">Courses</a></li> 
+    </ol>
+  </div>
+  <div class="middle" style="background-color:#fff;">
+    <h2>The Curriculum</h2>
+    <p> The Walpole High School Social Studies curriculum is intended to prepare students for enlightened and responsible citizenship in an increasingly global society.  In the three-year-required program, students discover our political, economic, and cultural roots in World and American History and find parallels in the present to situations faced by earlier generations.</p>
+    <p>
+                Courses with varying workloads, and electives available to juniors and seniors, allow every student to acquire the knowledge, skills, and understanding for further study and effective citizenship.  All students must take, and successfully complete, three years of Social Studies, which include: World History, United States History, and the United States in the Modern World.  Students are expected to complete these requirements by the conclusion of their junior year.
+              </p>
+              <p>
+                For those students who plan to attend four-year colleges, African-American Studies, Economics, United States Government, Psychology, and Sociology are recommended courses which enhance academic preparation.  International Relations, Microeconomics, and Macroeconomics are academically rigorous courses that provide an accelerated and intensive study of those disciplines.  Street Law and History and Culture Through Film are offered for those students who wish to enrich their backgrounds in preparation for further study, as well as prepare for active participation in our democratic society. 
+            </p>
+            <p>
+                For those students ready to take on the reading and analytical challenges of college-level courses while still in high school, Pre-AP (Advanced Placement) United States History,  AP United States History, and AP European History provide students an opportunity to earn college credit.  All students enrolled in AP courses must take the AP exam in May.</p>
+            </div>  
+
+   <div class="pic">
+    <img src="Images/SS_Dept_16-17.jpg" height="125"> <img src="Images/History.png"  height="125">
+              <img src="Images/images.jpg" height="125">
+              <img src="Images/besthistoricalsites.jpg"  height="125">
+  </div>
+  <div class="footer">
+    <p>A Fisher WHS Web Design</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
